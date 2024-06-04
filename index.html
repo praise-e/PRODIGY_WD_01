@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> D' Makeover</title>
+    <link rel="icon" href="images/photo-1.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top-container">
+        <nav>
+            <h1 class="brand-logo"> 💄 D' <br> Makeover</h1>
+            <ul>
+                <a type="button" href="index.html#services" class="nav-btn" onclick="showForm()">BOOK A SESSION</a></li>
+            </ul>
+        </nav>
+        <main>
+
+            <h2>Clean beats only.</h2>
+            <em class="bold">Anytime. Anyday.</em>
+            <ul class="features">
+                <li>💄Glam for all occassions</li>
+                <li>💄Bridal makeover</li>
+                <li>💄Gele tying</li>
+                <li>💄Makeup Training</li>
+            </ul>
+            <button class="btn" onclick="showForm()">BOOK A SESSION</button>
+
+            <img src="images/linedup-lipgloss.png" alt="" class="lipgloss-img">
+            <img src="images/woman1.png" alt="" class="woman-img">
+        </main>
+        <div class="scroll-div">
+            <p class="scroll-icon icon1">></p>
+            <p class="scroll-icon icon2">></p>
+            <p class="scroll-icon icon3">></p>
+        </div>
+    </div>
+
+
+    <div id="services">
+
+        <div class="form-container">
+            <form action="thank-you.html">
+                <h3 class="service-heading">It takes just a few minutes to book a session. <br>
+                    See for yourself.
+                </h3>
+                <p></p>
+                <label for="name">Full name (surname first)
+                    <input type="text" id="name" name="name" class="input" autocomplete="name" required>
+                </label>
+                <label for="number"> Phone number
+                    <input type="tel" id="number" name="number" class="input" autocomplete="tel" required>
+                </label>
+                <label for="service">
+                    Which of our services are you interested in?
+                    <select name="service" id="service" onchange="showMode()" required>
+                        <option value=""></option>
+                        <option value="1" class="show">Simple glam for an occassion</option>
+                        <option value="2">Bridal makeover</option>
+                        <option value="3">Gele tying</option>
+                        <option value="4">Makeup Training</option>
+                    </select>
+                </label>
+                <div id="type" class="hidden">
+                    <label for="type">
+                        Which would you prefer?
+                        <select name="type" id="type" onchange="dateAndTime()" required>
+                            <option value=""></option>
+                            <option value="1">Home service</option>
+                            <option value="2">Studio session</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div id="date" class="hidden">
+                    <label for="date">
+                        Which day?
+                        <input type="date" name="date" id="date" required>
+                    </label>
+                </div>
+
+                <div class="hidden" id="time">
+                    <label for="time">
+                        What time?
+                        <input type="time" name="time" id="time" required>
+                    </label>
+                </div>
+
+
+
+                <div id="training-reg" class="hidden">
+                    <h3 class="trainingHeading">Welcome <span id="customerName"></span>.
+                        <p>You're in the right place.</p>
+                    </h3>
+                    <p>We have a variety of learning modes, of which you can select anyone that's most suitable for you.
+                    </p>
+
+                    <label for="self-paced">
+                        <input type="radio" name="learning-mode" class="learning-mode" id="self-paced">
+                        <details>
+                            <summary>Online and self-paced</summary>
+                            <p>With this mode, you have the flexibility to proceed through the materials and tasks at
+                                your own
+                                preferred speed and schedule. You can progress through the content independently,
+                                without strict deadlines or fixed schedules imposed by an instructor or course
+                                structure.
+                            </p>
+                        </details>
+                    </label>
+                    <label for="instructor-led">
+                        <input type="radio" name="learning-mode" class="learning-mode" id="instructor-led">
+                        <details>
+                            <summary>Online and instructor-led</summary>
+                            <p>With this mode, you'll engage in learning activities conducted over the internet, but led
+                                by an
+                                insructor. Such learning activities include (but is not limited to, depending on your
+                                instructor):
+                            <ul>
+                                <li>Lectures</li>
+                                <li>Presentations</li>
+                                <li>Group exercises</li>
+                                <li>Assessments</li>
+                            </ul>Your instructor delivers lectures,
+                            guides your learning process, leads discussions, and provide support and feedback. You'll be
+                            entitled to scheduled sessions (virtual), and a well-structured syllabus.
+                            This format combines the benefit of remote learning with the guidance and expertise of an
+                            instructor, allowing for an interactive and collaborative learning experience.
+                            </p>
+                        </details>
+                    </label>
+                    <label for="on-site">
+                        <input type="radio" name="learning-mode" class="learning-mode" id="on-site">
+                        <details>
+                            <summary>On-site</summary>
+                            <p>With this mode, you'll attend training sessions in person at a physical location, with
+                                instructors and peers.
+                                This is only available for Lagos residents.
+                            </p>
+                        </details>
+                    </label><br>
+                </div>
+                <div class="email-container hidden">
+                    <p>We'll contact you via email</p><br>
+                    <label for="email">
+                        Type in your email address
+                        <input type="email" id="email" name="email" class="input" autocomplete="email" required>
+                    </label>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+        <footer>
+            <p>&COPY; D' Makeover. 2024</p>
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-color: pink;
+    color: #800000;
+    text-align: center;
+    font-family: serif;
+}
+div {
+    margin: 15% auto;
+}
+.redirect {
+    display: block;
+    padding-top: 20px;
+    text-decoration: none;
+    color: #800000;
+    width: 12%;
+    border: 1px solid #800000;
+    border-radius: 6%;
+    margin: 60px auto 0;
+    padding: 1%;
+    font-weight: 800;
+    transition: 1s;
+}
+.redirect:active {
+    color: #e19913;
+}
+.redirect:visited {
+    color: #800000;
+}
+.redirect:hover {
+    background-color: #800000de;
+    color: antiquewhite;
+}
+img {
+    width: 15px;
+    height: 15px;
+}
+footer {
+    font-size: .9rem;
+}
